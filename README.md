@@ -1,10 +1,9 @@
 # Dreams n' Desires: Ponder & KubeJS
 
 Unofficial addon for **Create: Dreams n' Desires** (NeoForge 1.21.1). It adds the in-game Ponder
-scenes and KubeJS recipe support that D&D doesn't ship with, and documents its custom recipe types
-here so you don't have to go hunting for them.
+scenes and KubeJS recipe support that D&D doesn't ship with.
 
-Not affiliated with or endorsed by LopyLuna. Please don't send issues with this addon to the D&D team.
+Not affiliated with or endorsed by LopyLuna. Please don't send issues with this addon to him.
 
 ## Built for
 
@@ -18,10 +17,10 @@ Not affiliated with or endorsed by LopyLuna. Please don't send issues with this 
 
 ### Version warning
 
-The addon is built against **one** D&D release (`dnd_tested_version` in `gradle.properties`). Any
+The addon is built against a specific D&D release (`dnd_tested_version` in `gradle.properties`). Any
 D&D version still loads, because a hard version lock would break packs every time D&D updates.
-When the installed version is different, the player gets **one chat message per game launch**,
-about two seconds after joining a world or server, with:
+When the installed version is different, the player gets one chat warning
+about two seconds after joining a world or server with:
 
 - a link to the D&D version this addon was built for
 - a link to this addon's page (if `addon_page_url` is set)
@@ -40,25 +39,24 @@ when a newer build of this addon is out.
 
 ## Gameplay tweaks
 
-All on by default. Each one can be turned off in `config/dndesires_ponder-startup.toml`. The file is
-read **once at startup**, so restart after changing it. Each tweak is a built-in datapack that's only
-loaded when its switch is on, and it sits above mod data so it reliably overrides D&D's own recipes.
+All on by default. Each one can be turned off in `config/dndesires_ponder-startup.toml` or in mod settings. 
+The file is read **once at startup**, so restart after changing it. Each tweak is a built-in datapack that's
+only loaded when its switch is on, and it sits above mod data so it reliably overrides D&D's own recipes.
 
 | Switch | What it does |
 |---|---|
 | `disableHandheldTools` | Removes the **Handheld Saw**, **Handheld Drill** and **Gatling Breaker**: recipes removed, hidden from creative and JEI, and copies already in a world can't mine, attack or be used |
-| `disableBurnerStock` | Removes **Burner Stock** and its smelting/blasting/smoking recipes, which turn it back into itself so a furnace never stops "smelting" for the Stirling Engine. It's hidden from creative and JEI. The Seething Catalyst Sail now uses a Blaze Burner in its place |
+| `disableBurnerStock` | Removes **Burner Stock** and its smelting/blasting/smoking recipes, which turn it back into itself so a furnace never stops "smelting" for the Stirling Engine. The Seething Catalyst Sail now uses a Blaze Burner in its place |
 | `milkshakeRecipes` | **Chocolate:** milk instead of liquid chocolate, and accepts Create's or Pam's chocolate bar. **Vanilla:** a dandelion or any white flower instead of a blue orchid, or Pam's vanilla bean when Pam's Trees is installed. **Strawberry:** Pam's strawberries instead of sweet berries when Pam's Crops is installed |
-| `brecciaQuartz` | Breccia (Hydraulic Compacting) uses quartz (`#c:gems/quartz`) instead of pumpkin milkshake |
+| `brecciaQuartz` | Breccia (Hydraulic Compacting) uses quartz instead of pumpkin milkshake |
 | `removeMilkshakeOreStone` | Milkshake + lava only makes its normal stone: no ore-stone chance on Bedrock, Netherite Blocks, Beacons, Dragon Eggs, Reinforced Deepslate or End Portals. Also removes the Hydraulic Compacting recipes that turn milkshake into Asurine, Crimsite, Ochrum and Veridium |
-| `dyeableIndustrialFan` | Right-click an Industrial Fan with any dye to color its blades. D&D registered models for this but never built it. Only turns on when the installed D&D is the tested version, unless `dyeableFanOnAnyDnDVersion=true`, because it replaces D&D's fan renderer. Players without the addon see plain blades |
+| `dyeableIndustrialFan` | Right-click an Industrial Fan with any dye to color its blades. |
 | `mixerRecipes` | Mechanical Mixer recipes for all 16 asphalt colors and all 16 bore block colors (8 blocks + 1 dye), plain bore blocks, and 1 coal → 8 coal pieces with 1 gravel as a filter (the gravel comes back out) |
 
-Pam's HarvestCraft is **never required**. The Pam's recipes use `neoforge:item_exists` conditions
-(`pamhc2foodcore:chocolatebaritem`, `pamhc2trees:vanillabeanitem`, `pamhc2crops:strawberryitem`),
+Pam's HarvestCraft is **not required**. The Pam's recipes use optional conditions
 so without Pam's they don't load and the default recipe is used instead.
 
-Dyeing uses `c:dyes/<color>` tags, so any mod's dyes work, the same as D&D's own crafting recipes.
+Fan dyeing uses any mod's dyes.
 
 ## Ponder scenes
 
@@ -171,6 +169,7 @@ After editing any scene text, regenerate the lang file (needs the D&D jar in `ru
 ```
 
 ## Updating for a new D&D release
+(just wait for me to do it)
 
 1. Put the new D&D jar in `run\mods\`.
 2. Set `dnd_tested_version` in `gradle.properties` to the version string shown on the Mods screen.
