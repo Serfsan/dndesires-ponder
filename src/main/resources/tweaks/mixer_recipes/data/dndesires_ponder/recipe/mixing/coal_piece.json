@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:coal"
+    },
+    {
+      "tag": "c:gravels"
+    }
+  ],
+  "results": [
+    {
+      "count": 8,
+      "id": "dndesires:coal_piece"
+    },
+    {
+      "id": "minecraft:gravel"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "c:dyes/yellow"
+    }
+  ],
+  "results": [
+    {
+      "count": 8,
+      "id": "dndesires:yellow_bore_block"
+    }
+  ]
+}

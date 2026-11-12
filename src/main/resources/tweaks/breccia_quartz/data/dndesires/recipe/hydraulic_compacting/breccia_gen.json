@@ -1,0 +1,26 @@
+{
+  "type": "dndesires:hydraulic_compacting",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "create:scorchia"
+    },
+    {
+      "item": "create:scorchia"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 500,
+      "tag": "c:lava"
+    },
+    {
+      "tag": "c:gems/quartz"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "id": "dndesires:breccia"
+    }
+  ]
+}

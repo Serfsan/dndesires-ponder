@@ -1,0 +1,50 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="${mod_authors}"
+${update_json_line}
+# No network payloads and no registry content: the addon works client-only (Ponder),
+# server-only (KubeJS schemas), or both, and never blocks joining a server.
+description='''${mod_description}'''
+
+# Read at runtime by DnDTarget. Edit these via gradle.properties, not here.
+[modproperties.${mod_id}]
+dndesires_tested_version="${dnd_tested_version}"
+dndesires_download_url="${dnd_download_url}"
+addon_page_url="${addon_page_url}"
+
+[[dependencies.${mod_id}]]
+modId="neoforge"
+type="required"
+versionRange="${neo_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="minecraft"
+type="required"
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="create"
+type="required"
+versionRange="${create_version_range}"
+ordering="AFTER"
+side="BOTH"
+
+# Any D&D version loads. A version other than dndesires_tested_version only triggers
+# a chat warning (see VersionWarning), because a hard version lock would crash packs
+# every time D&D updates, even when nothing relevant changed.
+[[dependencies.${mod_id}]]
+modId="dndesires"
+type="required"
+versionRange="*"
+ordering="AFTER"
+side="BOTH"

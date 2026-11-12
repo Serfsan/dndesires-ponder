@@ -1,0 +1,38 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "c:dyes/lime"
+    }
+  ],
+  "results": [
+    {
+      "count": 8,
+      "id": "dndesires:lime_bore_block"
+    }
+  ]
+}

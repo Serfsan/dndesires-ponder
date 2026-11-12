@@ -1,0 +1,38 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "c:dyes/blue"
+    }
+  ],
+  "results": [
+    {
+      "count": 8,
+      "id": "dndesires:blue_bore_block"
+    }
+  ]
+}

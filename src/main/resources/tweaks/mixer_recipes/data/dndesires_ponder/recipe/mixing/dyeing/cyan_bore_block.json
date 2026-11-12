@@ -1,0 +1,38 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "dndesires:bore_blocks"
+    },
+    {
+      "tag": "c:dyes/cyan"
+    }
+  ],
+  "results": [
+    {
+      "count": 8,
+      "id": "dndesires:cyan_bore_block"
+    }
+  ]
+}

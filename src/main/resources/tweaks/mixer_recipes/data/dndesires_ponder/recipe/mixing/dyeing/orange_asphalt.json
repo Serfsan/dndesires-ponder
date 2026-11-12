@@ -1,0 +1,38 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "dndesires:asphalts"
+    },
+    {
+      "tag": "dndesires:asphalts"
+    },
+    {
+      "tag": "dndesires:asphalts"
+    },
+    {
+      "tag": "dndesires:asphalts"
+    },
+    {
+      "tag": "dndesires:asphalts"
+    },
+    {
+      "tag": "dndesires:asphalts"
+    },
+    {
+      "tag": "dndesires:asphalts"
+    },
+    {
+      "tag": "dndesires:asphalts"
+    },
+    {
+      "tag": "c:dyes/orange"
+    }
+  ],
+  "results": [
+    {
+      "count": 8,
+      "id": "dndesires:orange_asphalt"
+    }
+  ]
+}

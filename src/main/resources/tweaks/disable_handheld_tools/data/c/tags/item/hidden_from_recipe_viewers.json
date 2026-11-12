@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "dndesires:handheld_saw",
+      "required": false
+    },
+    {
+      "id": "dndesires:handheld_drill",
+      "required": false
+    },
+    {
+      "id": "dndesires:gatling_breaker",
+      "required": false
+    }
+  ]
+}
